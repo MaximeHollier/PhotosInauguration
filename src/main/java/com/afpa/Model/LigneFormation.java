@@ -1,27 +1,27 @@
 package com.afpa.Model;
 
 public class LigneFormation {
-    private String region;
-    private String libelle;
+    private String région;
+    private String libellé;
 
-    public LigneFormation(String region, String libelle) {
-        this.region = region;
-        this.libelle = libelle;
+    public LigneFormation(String région, String libellé) {
+        this.région = région;
+        this.libellé = libellé;
     }
 
-    public String getRegion() {
-        return region;
+    public String getRégion() {
+        return région;
     }
 
-    public void setRegion(String region) {
-        this.region = region;
+    public void setRégion(String région) {
+        this.région = région;
     }
 
-    public String getLibelle() {
-        return libelle;
+    public String getLibellé() {
+        return libellé;
     }
 
-    public void setLibelle(String libelle) {
-        this.libelle = libelle;
+    public void setLibellé(String libellé) {
+        this.libellé = libellé;
     }
 }
