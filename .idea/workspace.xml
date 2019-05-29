@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bac986b6-ea28-4a39-a2a6-042c3bd5a530" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/afpa/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/afpa/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/afpa/Excell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/afpa/Excell.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/afpa/Model/LigneFormation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/afpa/Model/LigneFormation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/afpa/Model/LigneFormation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/afpa/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/afpa/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/afpa/Excell.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/afpa/Excell.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -45,11 +43,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/afpa/Excell.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="86" lean-forward="true" selection-start-line="86" selection-end-line="86" />
+            <state relative-caret-position="1326">
+              <caret line="78" column="69" lean-forward="true" selection-start-line="78" selection-start-column="69" selection-end-line="78" selection-end-column="69" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2907#2908#0" expanded="true" />
+                <element signature="e#2961#2962#0" expanded="true" />
                 <element signature="e#2885#2886#0" expanded="true" />
                 <element signature="e#2920#2921#0" expanded="true" />
               </folding>
@@ -220,7 +218,7 @@
       <updated>1558964211182</updated>
       <workItem from="1558964214694" duration="3918000" />
       <workItem from="1559035647886" duration="8870000" />
-      <workItem from="1559111742328" duration="4605000" />
+      <workItem from="1559111742328" duration="4895000" />
     </task>
     <task id="LOCAL-00001" summary="rere">
       <created>1559036876155</created>
@@ -250,17 +248,24 @@
       <option name="project" value="LOCAL" />
       <updated>1559112822188</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="CommitTest">
+      <created>1559116530357</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1559116530357</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17393000" />
+    <option name="totallyTimeSpent" value="17683000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12080537" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18322147" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -336,11 +341,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/afpa/Excell.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="86" lean-forward="true" selection-start-line="86" selection-end-line="86" />
+        <state relative-caret-position="1326">
+          <caret line="78" column="69" lean-forward="true" selection-start-line="78" selection-start-column="69" selection-end-line="78" selection-end-column="69" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2907#2908#0" expanded="true" />
+            <element signature="e#2961#2962#0" expanded="true" />
             <element signature="e#2885#2886#0" expanded="true" />
             <element signature="e#2920#2921#0" expanded="true" />
           </folding>
