@@ -1,10 +1,8 @@
 package com.afpa;
 
 import com.afpa.Model.LigneFormation;
-import javafx.beans.Observable;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.*;
 
 import java.io.File;
@@ -30,7 +28,8 @@ public class Excell {
     private void chargerFichier()throws IOException {
         this.workbook = WorkbookFactory.create(new File(this.fileName));
     }
-    public ArrayList<Integer> compterPr()
+
+    /*public ArrayList<Integer> compterPr()
     {
         ArrayList<Integer> arrayList = new ArrayList<>();
         Sheet sheet = this.workbook.getSheetAt(0);
@@ -55,7 +54,7 @@ public class Excell {
 
         }
         return arrayList;
-    }
+    }*/
 
     public void creationObjet()
     {
@@ -73,6 +72,8 @@ public class Excell {
             while(cellIterator.hasNext()) {
                 Cell cell = cellIterator.next();
                 String cellValue = new DataFormatter().formatCellValue(cell);
+
+                //Ajout des titres de colonnes dans une liste
                 if (cell.getRowIndex()==11 && (cell.getColumnIndex()==0||cell.getColumnIndex()==7)) {
                     titreColonne.add(cellValue);
                 }
@@ -86,7 +87,6 @@ public class Excell {
                 }
 
             }
-            System.out.println("région : " + region + " Lib : " + lib);
             if(!region.isEmpty()&&!lib.isEmpty())
                 this.listFormation.add(new LigneFormation(region,lib));
 
@@ -98,5 +98,35 @@ public class Excell {
 
     public ArrayList<String> getTitreColonne() {
         return titreColonne;
+    }
+
+    public ObservableList<String> getChoiceboxList(String type)
+    {
+        ObservableList<String> observableList = FXCollections.observableArrayList();
+        for(LigneFormation ligneFormation : this.listFormation)
+        {
+            if(type.equals("Region")) {
+                if (!isInList(ligneFormation.getRégion(), observableList)) {
+                    observableList.add(ligneFormation.getRégion());
+                }
+            }
+            else if(type.equals("Libelle"))
+            {
+                if (!isInList(ligneFormation.getLibellé(), observableList)) {
+                    observableList.add(ligneFormation.getLibellé());
+                }
+            }
+
+        }
+        return observableList;
+    }
+    private boolean isInList(String s, ObservableList<String> list)
+    {
+        for(String string : list)
+        {
+            if(s.equals(string))
+                return true;
+        }
+        return false;
     }
 }
