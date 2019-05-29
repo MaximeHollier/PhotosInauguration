@@ -129,4 +129,15 @@ public class Excell {
         }
         return false;
     }
+
+    public ObservableList<LigneFormation> getListFormationFiltreByRegion(String region)
+    {
+        ObservableList<LigneFormation> observableList = FXCollections.observableArrayList();
+        for(LigneFormation ligneFormation : this.listFormation)
+        {
+            if(ligneFormation.getRégion().equals(region))
+                observableList.add(ligneFormation);
+        }
+        return observableList;
+    }
 }

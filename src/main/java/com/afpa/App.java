@@ -25,7 +25,7 @@ public class App extends Application
         excell = new Excell("C:\\Users\\Maxime\\IdeaProjects\\TestPOI\\src\\main\\java\\com\\afpa\\Planning2019.xlsx");
         excell.creationObjet();
 
-        TableView<LigneFormation> table = new TableView<>();
+        final TableView<LigneFormation> table = new TableView<>();
 
         ArrayList<TableColumn> tableColumnArrayList = new ArrayList<>();
         for(String titre : excell.getTitreColonne())
@@ -43,12 +43,12 @@ public class App extends Application
 
         table.setItems(excell.getListFormation());
 
-        ChoiceBox<String> choiceBox = new ChoiceBox<>();
+        final ChoiceBox<String> choiceBox = new ChoiceBox<>();
         choiceBox.setItems(excell.getChoiceboxList("Region"));
         choiceBox.getSelectionModel().selectedIndexProperty().addListener(new ChangeListener<Number>() {
             @Override
             public void changed(ObservableValue<? extends Number> observable, Number oldValue, Number newValue) {
-
+                table.setItems(excell.getListFormationFiltreByRegion(choiceBox.getItems().get(newValue.intValue())));
             }
         });
         VBox vBox = new VBox();
